@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+nav{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav h1{
+    font-size: 2rem;
+    color: #000000;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+       /*   input      button */
+.inputbutton{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(210, 231, 249);
+}
+.inputbutton input{
+    padding: 10px;
+    width: 50%;
+    font-size: 1.5rem;
+    border: 1px solid #0000002d;
+    border-radius: 5px;
+    outline: none;
+}
+.inputbutton .button{
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border: none;
+    background-color: #8587ff;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.inputbutton .button:hover{
+    background-color: #7173fc;
+}
+.inputbutton .button:active{
+    background-color: #5b5dfc;
+    transform: scale(0.98);
+}
+ /*   input      button   end */
+
+/*  3 image container */
+
+.imgpara{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.imgpara .imgp{
+    width: auto;
+    height: auto;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+.imgpara .imgp img{
+    width: 400px;
+    height: 300px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    object-fit: cover;
+}
+
+.textbox{
+    width: 300px;
+}
+.textbox p{
+    padding: 8px;
+    font-size: 0.95rem;
+}
+
+.button2{
+    height: 40px;
+    width: auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    background-color: #8587ff;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    display: none;
+}
+.button2:hover{
+    background-color: #7173fc;
+}
+.button2:active{
+    background-color: #5b5dfc;
+    transform: scale(0.98);
+}
+
+@media (max-width:600px){
+    .inputbutton input{
+        font-size: 1.2rem;
+    }
+    .inputbutton .button{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width:440px){
+    .imgpara .imgp img{
+
+        width: 350px;
+        height: 250px;
+    }
+
+}
