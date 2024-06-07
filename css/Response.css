@@ -1,0 +1,264 @@
+@media  (max-width: 1000px) {
+    .imgpara {
+        columns: 4 340px;
+       
+      }
+      .header1 {
+        height: auto;
+        width: 75%;
+       }
+}
+
+
+@media (max-width:901px){
+    .background .title1 .paragraph {
+        font-size: 1.04rem;
+        margin-bottom: 5px;
+      }
+      .header1 {
+        height: auto;
+        width: 85%;
+       }
+    .InputContainer {
+        height: 50px;
+        width: 100%;
+    }
+    .trending {
+        height: 40px;
+        width: 100%;
+    }
+    
+}
+@media (max-width:830px){
+    
+    .navoption{
+    display: none;
+   }
+   .header1 {
+    height: auto;
+    width: 75%;
+   }
+   .background .title1 .paragraph {
+    font-size: 1.04rem;
+    margin-bottom: 5px;
+ 
+  }
+  
+   .InputContainer {
+    height: 50px;
+    width: 100%;
+  }
+  .trending {
+    height: 40px;
+    width: 100%;
+  }
+    .InputContainer {
+      height: 47px;
+      width: 100%;
+    }
+ }
+ @media (max-width:732px){
+    .imgpara {
+        
+        columns: 5 295px;
+      }
+      .Searchbutton {
+        height: auto;
+        width: 20%;
+       }
+      
+ }
+ @media (max-width:664px){
+
+    .background .title1 .paragraph{
+        font-size: 0.9rem;
+    }
+    .trending {
+        height: 40px;
+        width: 100%;
+        font-size: 0.9rem;
+      }
+      .trending-text {
+        font-size: 0.99rem;
+        font-weight: 400;
+      }
+    .imgpara {
+        columns: 4 215px;
+      }
+      .textboxtop {
+        display: none;
+      }
+
+      .textbox {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        position: absolute;
+        bottom: 0px;
+        transition: bottom 0.2s ease;
+        background: linear-gradient(to top, #0000005c,transparent);
+      }
+      .Btn {
+        width: 39px;
+        height: 39px;
+      }
+      .title p {
+        display: none;
+      }
+
+
+
+ }
+
+
+ @media (max-width:571px){
+  .background .title1 {
+    height: 180px;
+  }
+  .background {
+    height: 400px;
+  }
+  .bg-title {
+    padding-top: 0px;
+  }
+
+    .header1 {
+      height: auto;
+      width: 85%;
+    }
+    .trending-text {
+        font-size: 0.8rem;
+        font-weight: 400;
+        margin-left: 2px;
+      }
+      .InputContainer {
+        height: 43px;
+        width: 100%;
+         }
+         .select {
+           height: 100%;
+           width: 80px;
+           font-size: 0.9rem;
+           text-align: center;
+           padding-left: 15px;
+           padding-right: 0px;
+           justify-content: space-around;
+         }
+         .menu{
+          height: 100px;
+          width: 90px;
+         }
+         li {
+          height: 30px;
+          width: 100%;
+          font-size: 0.9rem;
+         }
+         .input {
+           width: 90%;
+           height: 100%;
+           padding-left: 20px;
+           border: none;
+           outline: none;
+           font-size: 0.8em;
+         }
+         
+
+
+
+         .bg-photographer-box {
+           height: auto;
+           width: 180px;
+           display: flex;
+           justify-content: space-evenly;
+           font-size: 0.7rem;
+         }
+
+         .bg-licence-box {
+           height: auto;
+           width: 200px;
+           display: flex;
+           justify-content: space-evenly;
+           padding-top: 40px;
+           cursor: pointer;
+           font-size: 0.7rem;
+         }
+         .mainmenu {
+          height: 60px;
+          border-bottom: 1px solid #eaeaea;
+          
+        }
+         .imgpara {
+          margin-top: 10px;
+         columns: 4 165px;
+         gap: 10px;
+          
+         }
+         .imgpara .imgp{
+          margin-bottom: 5px;
+         }
+         
+    }
+     
+ 
+ @media (max-width:443px){
+  .background .title1 h1 {
+    font-size: 3rem;
+  }
+  .background .title1 .paragraph {
+    font-size: 0.7rem;
+  }
+  .bg-photographer-box {
+    height: auto;
+    width: 140px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 0.5rem;
+  }
+  .bg-licence-box {
+    height: auto;
+    width: 160px;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+    font-size: 0.5rem;
+  }
+  .select {
+    padding-left: 5px;
+  }
+  .selected {
+    color: #242424;
+    
+  }
+  /* .menu-ops-text{
+    display: none;
+  } */
+  .trending {
+    font-size: 0.6rem;
+  }
+  .trending-text {
+    font-size: 0.6rem;
+    font-weight: 400;
+    margin-left: 2px;
+  }
+     .InputContainer {
+         height: 41px;
+         width: 100%;
+          }
+          
+          .header1 {
+            height: auto;
+            width: 90%;
+          }
+          .input {
+            padding-left: 10px;
+          }
+          .micButton {
+             padding: 0px 15px 0px 7px;
+          }
+          .imgpara .imgp img {
+            width: 100%;
+            height: auto;
+          }
+ }

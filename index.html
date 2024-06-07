@@ -3,64 +3,590 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Search</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Pixacon</title>
+    
+    
+    <link rel="stylesheet" href="./css/viewBox.css">
+    <link rel="stylesheet" href="./css/imagesbox.css">
+    <link rel="stylesheet" href="./css/videosbox.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/Response.css">
+    
+    <script src="https://kit.fontawesome.com/f74ecaf58e.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
-        <h1>Image Search web</h1>
+        <div class="logo">Pixacon</div>
+        <div class="navoption">
+          <div class="navoption1">
+            <button class="btn photo" >Home</button>
+            <button class="btn video">Creator</button>
+          </div>
+          <div class="navoption2">
+            <button>submit feedback</button>
+            <i class="fa-solid fa-bell "></i>
+          </div>
+        </div>
     </nav>
-<main>
-        <form action="#" class="inputbutton">
-            <input type="text" placeholder="Search For Images" value="" required>
-            <button class="button">Search</button>
-        </form>
     
+
+<!-- video and photo viewBox -->
+    <div class="videobox">
+        <div class="newbox">
+            <div class="icon1">
+              <div class="profile">
+                <img id="profileicon" src="./icon/icons8-male-user-48.png" alt="">
+                <p id="profilename">Sayan Mondal</p>
+              </div>
+              <button class="button-down" type="button">
+                <span class="button__text">Download</span>
+                <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
+              </button>
+            </div>
+            <div class="videomain">
+              
+                <video class="videoplaybox" src="" controls></video>
+            </div>
+        </div>
+    </div>
+<!-- video and photo viewBox end -->
+
+<header class="background">
+<div class="header1">
+  <div class="title1">
+  <h1>Pixacon</h1>
+  <div class="paragraph">
+    <p>Beautiful, free photo and video.</p>
+     <p>Gifted by the world's most generous community of photographers.</p> 
+        
+  </div>
+  
+</div>
+ 
+
+  <div class="inputbutton">
+    <div class="InputContainer ">
+        <!-- /* Photo or video option */ -->
+        <div class="selectbox">
+            <div class="select">
+                <p class="selected">Photos</p>
+                 <div class="caret">
+                   <img src="https://img.icons8.com/ios-glyphs/30/sort-down.png" alt="sort-down"/>
+                  </div>
+            </div>
+              <ul class="menu">
+                <li ><i class="fa-regular fa-image"></i><p class="menu-ops-text">Photos</p></li>
+                <li ><i class="fa-solid fa-video"></i><p class="menu-ops-text">Videos</p></li>
+              </ul>
+        </div>
+        <!-- /* Photo or video option End */ -->
+         <div class="hr"></div>
+        <input type="text" name="text" class="input" id="input" placeholder="Search for photos and videos">
+        
+        <button  class="Searchbutton ">
+      <svg viewBox="0 0 512 512" class="searchIcon"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path></svg>
+      </button>
+      
+      </div>
+</div>
+<div class="trending">
+  <p class="tr-src" style="color: rgba(255, 255, 255, 0.728);">Trending searches:</p>
+  <p class="trending-text">business,</p>
+  <p class="trending-text">computer,</p>
+  <p class="trending-text">nature,</p>
+  <p class="trending-text">Forest,</p>
+  <p class="trending-text">love</p>
+</div>
+</div>
+
+<div class="bg-title">
+  <div class="bg-photographer-box">
+    <p class="bg-photographer">Photo of the day by</p>
+    <p class="bg-photographername"> Creative Vix</p>
+  </div>
+  <div class="bg-licence-box">
+    <p class="bg-licence">Licence provided by</p>
+    <p class="bg-licencename"> Pixacon Licence</p>
+  </div>
+
+</div>
+
+
+
+</header>
+
+<main>
+  
 
     <!-- 3 image container  -->
-
+<div class="mainmenu">
+  <button class="menubtn src-btn imgpbtn">Photos</button>
+  <button class="menubtn src-btn videopbtn">Videos</button>
+</div>
+    
+<section class="section">
+    
     <div class="imgpara">
+        <!-- 1st image -->
         <div class="imgp">
-            <img src="./image/1st.jpg" alt="" >
-            <div class="textbox">
-                <p>Reflection of Mountain on Lake Braies</p>
+          <img src="https://images.pexels.com/photos/707046/pexels-photo-707046.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350"><div class="textboxtop">
+            <div class="Photographername">
+            <img id="profileicon" src="./icon/icons8-male-user-48.png" alt="">
+            <p>Trace Constant</p>
+           </div>
+          </div>
+          <div class="textbox">
+            <div class="title">
+            <p>Photo of White Bmw E46 </p>
+           </div>
+            <button class="Btn">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" class="svgIcon">
+                  <path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+                </svg>
+                <span class="icon2"></span>
+              </button>
             </div>
-            
-        </div>
-        <div class="imgp">
-            <img src="./image/2ed.jpeg" alt="">
-            <div class="textbox">
-                <p>Eaque consequuntur, eos optio non voluptatibus doloribus?</p>
             </div>
-        </div>
-        <div class="imgp">
-            <img src="./image/3rd.jpeg" alt="">
-            <div class="textbox">
-                <p>Person Standing Near Lake</p>
+       <!-- 2nd image -->
+              <div class="imgp">
+                <img src="https://images.pexels.com/photos/592677/pexels-photo-592677.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350">
+                <div class="textboxtop">
+                  <div class="Photographername">
+                <img id="profileicon" src="./icon/icons8-male-user-48.png" alt="">
+                <p>Ann H</p>
+               </div>
+              </div>
+              <div class="textbox">
+                <div class="title">
+                <p>Pink Rubber Duck Toy</p>
+               </div>
+                <button class="Btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" class="svgIcon">
+                      <path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+                    </svg>
+                    <span class="icon2"></span>
+                  </button>
+                </div>
+                </div>
+       <!-- 3rd image -->
+       <div class="imgp"><img src="https://images.pexels.com/photos/1761279/pexels-photo-1761279.jpeg"><div class="textboxtop"><div class="Photographername">
+        <img id="profileicon" src="./icon/icons8-male-user-48.png" alt="">
+        <p>Jacob Colvin</p>
+       </div></div><div class="textbox"><div class="title">
+        <p>First Perspective Photography of Hanging Bridge</p>
+       </div>
+        <button class="Btn">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" class="svgIcon">
+              <path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+            </svg>
+            <span class="icon2"></span>
+          </button></div></div>
+
+           <!-- 4th image -->
+           <div class="imgp"><img src="https://images.pexels.com/photos/1535775/pexels-photo-1535775.jpeg"><div class="textboxtop"><div class="Photographername">
+            <img id="profileicon" src="./icon/icons8-male-user-48.png" alt="">
+            <p>Jadson Thomas</p>
+           </div></div><div class="textbox"><div class="title">
+            <p>Graffiti on White Concrete Building</p>
+           </div>
+            <button class="Btn">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" class="svgIcon">
+                  <path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+                </svg>
+                <span class="icon2"></span>
+              </button></div></div>
+
+            <!-- 5th image -->
+              <div class="imgp"><img src="https://images.pexels.com/photos/592284/pexels-photo-592284.jpeg">
+                <div class="textboxtop"><div class="Photographername">
+                <img id="profileicon" src="./icon/icons8-male-user-48.png" alt="">
+                <p>eberhard grossgasteiger</p>
+               </div>
             </div>
-        </div>
-        <div class="imgp">
-            <img src="./image/5th.jpeg" alt="">
-            <div class="textbox">
-                <p>Red Vehicle on the Road</p>
+               <div class="textbox"><div class="title">
+                <p>Mountain Surrounded With Trees</p>
+               </div>
+                <button class="Btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" class="svgIcon">
+                      <path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+                    </svg>
+                    <span class="icon2"></span>
+                  </button>
+                </div>
             </div>
+
+          <!-- 6th image -->
+        <div class="imgp"><img src="https://images.pexels.com/photos/2264036/pexels-photo-2264036.jpeg">
+            <div class="textboxtop"><div class="Photographername">
+               <img id="profileicon" src="./icon/icons8-male-user-48.png" alt="">
+             <p>Israel França</p>
+          </div>
         </div>
-        <div class="imgp">
-            <img src="./image/6th.jpg" alt="">
-            <div class="textbox">
-                <p>Reflection of Mountain on Lake Braies</p>
+        <div class="textbox">
+            <div class="title">
+             <p>Sushi on White Plates on Brown Wooden Table</p>
             </div>
-        </div>
-        <div class="imgp">
-            <img src="./image/4th.jpeg" alt="">
-            <div class="textbox">
-                <p>Man Standing in Front of Car Near Woman</p>
-            </div>
-        </div>
-        
+      <button class="Btn">
+        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" class="svgIcon">
+          <path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+        </svg>
+        <span class="icon2"></span>
+      </button>
     </div>
+</div>
+
+     <!-- 7en image -->
+        <div class="imgp"><img src="https://images.pexels.com/photos/1235706/pexels-photo-1235706.jpeg"><div class="textboxtop"><div class="Photographername">
+            <img id="profileicon" src="./icon/icons8-male-user-48.png" alt="">
+            <p>Lood Goosen</p>
+           </div></div><div class="textbox"><div class="title">
+            <p>Brown Liquid Pouring on Black and White Ceramic Mug Selective Color Photography</p>
+           </div>
+            <button class="Btn">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" class="svgIcon">
+                  <path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+                </svg>
+                <span class="icon2"></span>
+            </button></div></div>
+
+
+<!-- 8th image -->
+            <div class="imgp">
+              <img src="https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg">
+              <div class="textboxtop">
+                <div class="Photographername">
+                <img id="profileicon" src="./icon/icons8-male-user-48.png" alt="">
+                <p>Michael Block</p>
+               </div>
+              </div>
+              <div class="textbox">
+                <div class="title">
+                <p>Photo Of Stream During Daytime</p>
+               </div>
+                <button class="Btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" class="svgIcon">
+                      <path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+                    </svg>
+                    <span class="icon2"></span>
+                  </button>
+                </div></div>
+
+    </div>
+  
+    <div class="videopara">
+       
+
+      <div class="videop">
+         <a id="videoplaybtn" href="#car">
+        <img src="https://images.pexels.com/videos/3066463/free-video-3066463.jpg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;h=630&amp;w=1200" alt="">
+      </a>
+   
+      <p class="videolink">https://videos.pexels.com/video-files/3066463/3066463-hd_2048_1080_24fps.mp4</p>
+      <div class="videobox-top">
+        <div class="playbtn">
+          <i class="fa-solid fa-circle-play" aria-hidden="true"></i>
+        </div>
+        <div>
+          
+        </div>
+       
+      </div>
+      <div class="videobox-down">
+        <div class="Photographer-v-name">
+          <img id="profileicon" src="./icon/icons8-male-user-48.png" alt="">
+          <p>Kelly</p>
+        </div>
+        <button class="Btn">
+          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" class="svgIcon">
+            <path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+          </svg>
+          <span class="icon2"></span>
+        </button>
+      </div>
+        </div>
+       <!-- 1st image -->
+      <div class="videop">
+        
+        <a id="videoplaybtn" href="#car">
+          <img src="https://images.pexels.com/videos/1448735/free-video-1448735.jpg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200" alt="">
+        </a>
+
+        <p class="videolink"></p>
+        <div class="videobox-top">
+          <div class="playbtn">
+            <i class="fa-solid fa-circle-play"></i>
+          </div>
+          <div>
+            
+          </div>
+         
+        </div>
+        <div class="videobox-down">
+          <div class="Photographer-v-name">
+            <img id="profileicon" src="./icon/icons8-male-user-48.png" alt="">
+            <p>Michael Block</p>
+          </div>
+          <button class="Btn">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" class="svgIcon">
+              <path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+            </svg>
+            <span class="icon2"></span>
+          </button>
+        </div>
+      </div>
+
+       <!-- 2nd image -->
+      <div class="videop">
+        <a id="videoplaybtn" href="#car">
+          <img src="https://images.pexels.com/photos/707046/pexels-photo-707046.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350">
+        </a>
+        <div class="videobox-top">
+          <div class="playbtn">
+            <i class="fa-solid fa-circle-play"></i>
+          </div>
+          <div>
+            
+          </div>
+         
+        </div>
+        <div class="videobox-down">
+          <div class="Photographer-v-name">
+            <img id="profileicon" src="./icon/icons8-male-user-48.png" alt="">
+            <p>Michael Block</p>
+          </div>
+          <button class="Btn">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" class="svgIcon">
+              <path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+            </svg>
+            <span class="icon2"></span>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- 3rd image -->
+      <div class="videop">
+        <a id="videoplaybtn" href="#car">
+          <img src="https://images.pexels.com/videos/6873503/pexels-photo-6873503.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=630">
+        </a>
+
+        <div class="videobox-top">
+          <div class="playbtn">
+            <i class="fa-solid fa-circle-play"></i>
+          </div>
+          <div>
+            
+          </div>
+         
+        </div>
+        <div class="videobox-down">
+          <div class="Photographer-v-name">
+            <img id="profileicon" src="./icon/icons8-male-user-48.png" alt="">
+            <p>Michael Block</p>
+          </div>
+          <button class="Btn">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" class="svgIcon">
+              <path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+            </svg>
+            <span class="icon2"></span>
+          </button>
+        </div>
+
+
+
+      </div>
+       
+       <!-- 4rt image -->
+      <div class="videop">
+        <a id="videoplaybtn" href="#car">
+         <img src="https://images.pexels.com/videos/3569294/free-video-3569294.jpg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200" alt="">
+        </a>
+
+        <div class="videobox-top">
+          <div class="playbtn">
+            <i class="fa-solid fa-circle-play"></i>
+          </div>
+          <div>
+            
+          </div>
+         
+        </div>
+        <div class="videobox-down">
+          <div class="Photographer-v-name">
+            <img id="profileicon" src="./icon/icons8-male-user-48.png" alt="">
+            <p>Michael Block</p>
+          </div>
+          <button class="Btn">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" class="svgIcon">
+              <path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+            </svg>
+            <span class="icon2"></span>
+          </button>
+        </div>
+
+
+      </div>
+      
+       <!-- 5th image -->
+      <div class="videop">
+        <a id="videoplaybtn" href="#car">
+         <img src="https://images.pexels.com/videos/3129957/free-video-3129957.jpg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200" alt="">
+        </a>
+
+        <div class="videobox-top">
+          <div class="playbtn">
+            <i class="fa-solid fa-circle-play"></i>
+          </div>
+          <div>
+            
+          </div>
+         
+        </div>
+        <div class="videobox-down">
+          <div class="Photographer-v-name">
+            <img id="profileicon" src="./icon/icons8-male-user-48.png" alt="">
+            <p>Michael Block</p>
+          </div>
+          <button class="Btn">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" class="svgIcon">
+              <path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+            </svg>
+            <span class="icon2"></span>
+          </button>
+        </div>
+
+
+      </div>
+       
+      <!-- 6th image -->
+      <div class="videop">
+        <a id="videoplaybtn" href="#car">
+         <img src="https://images.pexels.com/videos/4434242/pexels-photo-4434242.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=630" alt="">
+        </a>
+
+        <div class="videobox-top">
+          <div class="playbtn">
+            <i class="fa-solid fa-circle-play"></i>
+          </div>
+          <div>
+            
+          </div>
+         
+        </div>
+        <div class="videobox-down">
+          <div class="Photographer-v-name">
+            <img id="profileicon" src="./icon/icons8-male-user-48.png" alt="">
+            <p>Michael Block</p>
+          </div>
+          <button class="Btn">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" class="svgIcon">
+              <path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+            </svg>
+            <span class="icon2"></span>
+          </button>
+        </div>
+
+
+      </div>
+    
+      <!-- 7th image -->
+      <div class="videop">
+        <a id="videoplaybtn" href="#car">
+         <img src="https://images.pexels.com/videos/5512609/pexels-photo-5512609.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=630" alt="">
+        </a>
+
+        <div class="videobox-top">
+          <div class="playbtn">
+            <i class="fa-solid fa-circle-play"></i>
+          </div>
+          <div>
+            
+          </div>
+         
+        </div>
+        <div class="videobox-down">
+          <div class="Photographer-v-name">
+            <img id="profileicon" src="./icon/icons8-male-user-48.png" alt="">
+            <p>Michael Block</p>
+          </div>
+          <button class="Btn">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" class="svgIcon">
+              <path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+            </svg>
+            <span class="icon2"></span>
+          </button>
+        </div>
+
+
+      </div>
+
+      <!-- 8th image -->
+      <div class="videop">
+        <a id="videoplaybtn" href="#car">
+         <img src="https://images.pexels.com/videos/1777892/free-video-1777892.jpg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200" alt="">
+        </a>
+
+        <div class="videobox-top">
+          <div class="playbtn">
+            <i class="fa-solid fa-circle-play"></i>
+          </div>
+          <div>
+            
+          </div>
+         
+        </div>
+        <div class="videobox-down">
+          <div class="Photographer-v-name">
+            <img id="profileicon" src="./icon/icons8-male-user-48.png" alt="">
+            <p>Michael Block</p>
+          </div>
+          <button class="Btn">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" class="svgIcon">
+              <path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+            </svg>
+            <span class="icon2"></span>
+          </button>
+        </div>
+
+
+      </div>
+
+     <!-- 9th image -->
+      <div class="videop">
+        <a id="videoplaybtn" href="#car">
+         <img src="https://images.pexels.com/videos/3569294/free-video-3569294.jpg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200" alt="">
+        </a>
+
+        <div class="videobox-top">
+          <div class="playbtn">
+            <i class="fa-solid fa-circle-play"></i>
+          </div>
+          <div>
+            
+          </div>
+         
+        </div>
+        <div class="videobox-down">
+          <div class="Photographer-v-name">
+            <img id="profileicon" src="./icon/icons8-male-user-48.png" alt="">
+            <p>Michael Block</p>
+          </div>
+          <button class="Btn">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" class="svgIcon">
+              <path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+            </svg>
+            <span class="icon2"></span>
+          </button>
+        </div>
+
+
+      </div>
+      
+    </div>
+</section>
     
     <!-- 3 image container end  -->
+    
    
     <button class="button2">Show more</button>
 
@@ -74,6 +600,12 @@
 
 
 
-    <script src="code.js"></script>
+    <script src="./javascript/main.js"></script>
+    <script src="./javascript/op.js"></script>
+    <script src="./javascript/phototype.js"></script>
+    <script src="./javascript/videotype.js"></script>
+    <script src="https://kit.fontawesome.com/f74ecaf58e.js" crossorigin="anonymous"></script>
 </body>
 </html>
+
+<!--  Version code 0.1 -  Create by sayanthecoder😁😁😁😁   16/05/2024.  21:44  india -->

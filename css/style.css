@@ -1,0 +1,487 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+@font-face {
+  font-family: 'FeelfreeFont'; /* Name your font family */
+  src: url('/fornt/NatureBeautyPersonalUse-9Y2DK.ttf'); /* Locate the .ttf file within your directory*/
+}
+
+
+/* navbar-start */
+nav{
+  height: 70px;
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+.logo{
+  padding-left:20px ;
+  font-size: 2.0rem;
+  font-weight: 500;
+  font-family:"FeelfreeFont" ;
+  cursor: pointer;
+}
+
+.navoption{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: end;
+
+}
+
+.navoption1{
+  height: 100%;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.navoption2{
+  height: 100%;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navoption2 button{
+  height: 40px;
+  width: 150px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  margin-left: 10px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.navoption2 button:hover{
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: 600;
+}
+.navoption2 button:active{
+  transform: scale(0.98);
+}
+
+.navoption2 i{
+  margin-left: 10px;
+  margin-right: 20px;
+  font-size: 1.2rem;
+  border-radius: 50%;
+}
+.navoption2 i:hover{
+  animation: bellshake .5s cubic-bezier(.36,.07,.19,.97) both;
+  cursor: pointer;
+}
+@keyframes bellshake {
+  0% { transform: rotate(0); }
+  15% { transform: rotate(7deg); }
+  30% { transform: rotate(-7deg); }
+  45% { transform: rotate(7deg); }
+  60% { transform: rotate(-7deg); }
+  75% { transform: rotate(7deg); }
+  85% { transform: rotate(-7deg); }
+  92% { transform: rotate(7deg); }
+  100% { transform: rotate(0); }
+}
+
+
+
+/*   input      button   end */
+
+
+.btn {
+  height: 40px;
+  width: 80px;
+  background-color: #000000;
+  font-size: 1.1rem;
+  color: #515151;
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+.btn:focus,
+.btn:hover {
+  color: #000000;
+}
+
+.btn:focus:after,
+.btn:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.btn:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #000000;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+/* btn end*/
+
+
+/* navbar-end */
+
+
+
+
+.background{
+    height: 600px;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('/image/pexels-creative-vix-9754.jpg');
+    background-size: cover;
+    background-position: center;
+    justify-content: space-between;
+    
+}
+.header1{
+  height: auto;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.background .title1{
+height: 250px;
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: end;
+}
+.background .title1 h1{
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: #ffffff;
+    font-family: 'FeelfreeFont';
+    margin-bottom: 10px;
+
+}
+.background .title1 .paragraph{
+  width: 100%;
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.inputbutton{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.InputContainer {
+    height: 60px;
+    width: 100%;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.438);
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+  }
+   
+  /* Photo or video option */
+
+  .selectbox{
+    height: 100%;
+  }
+  .select{
+    height: 100%;
+    width: 100px;
+    font-size: 1.1rem;
+    text-align: center;
+    padding-left: 15px;
+    padding-right:15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  .select:hover{
+    background-color: rgba(255, 255, 255, 0.801);
+  }
+
+  .selected {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .caret img{
+    height: 15px;
+    width: 15px;
+  }
+
+  .menu{
+    display: none;
+    opacity: 1;
+    position: absolute;
+    z-index: 100;
+    height: 110px;
+    width: 110px;
+    margin-top: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(158, 158, 158, 0.801);
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    border-radius: 4px;
+    box-shadow: inset 0 0 10px #b8b8b8c5;
+  }
+  .selectbox:hover .menu{
+   display: flex;
+}
+
+  .selectbox:focus .menu{
+    display: none;
+  }
+li{
+    height: 40px;
+    width: 100%;
+    font-size: 1.1rem;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    transition-duration: .3s;
+}
+li:hover{
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.811);
+    box-shadow:  0 0 10px #b8b8b8;
+}
+
+.fa-video{
+  font-size: 1.0rem;
+}
+  /* Photo or video option End */
+  
+   
+  .input {
+    width: 80%;
+    height: 100%;
+    padding-left: 20px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 300;
+    caret-color: rgb(0, 0, 0);
+  }
+  .input::placeholder {
+   color: #0000004e;
+  }
+  .labelforsearch {
+    cursor: text;
+    padding: 0px 12px;
+  }
+  
+ 
+  .Searchbutton {
+    height: auto;
+    width: 10%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition-duration: .3s;
+  }
+  .searchIcon {
+    width: 15px;
+    padding-top: 100%;
+    padding-bottom: 100%;
+    padding-left:10px ;
+    padding-right: 10px;
+    fill: rgb(61, 61, 61);
+  }
+  .Searchbutton:hover {
+    background-color: rgb(225, 225, 225);
+  }
+  
+ 
+  .border {
+    height: 40%;
+    width: 1.3px;
+    background-color: rgb(223, 223, 223);
+  }
+  
+  .hr{
+    height: 70%;
+    width: 3px;
+    border-radius: 10px;
+    background-color: rgb(192, 192, 192);
+   }
+
+
+   .trending{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+   }
+   .trending-text{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-left: 10px;
+    cursor: pointer;
+   }
+
+ 
+   .bg-title{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+    cursor: pointer;
+   }
+  .bg-photographer-box{
+    height: auto;
+    width: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 40px;
+  }
+   .bg-photographer{
+    color: #bebebe;
+   }
+   .bg-photographername{
+    color: #ffffff;
+    font-weight: 600;
+   }
+
+
+   .bg-licence-box{
+    height: auto;
+    width: 285px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 40px;
+    cursor: pointer;
+   }
+   .bg-licence{
+    color: #bebebe;
+   
+   }
+   .bg-licencename{
+    color: #ffffff;
+    font-weight: 600;
+   }
+ /* main start */
+
+
+main{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainmenu{
+  height: 80px;
+  width: 95%;
+  display: flex;
+  align-items: end;
+}
+
+.menubtn{
+  height: 40px;
+  width: 80px;
+  margin-left: 10px;
+  font-size: 1.1rem;
+  border: 2px solid transparent;
+  color: #000000;
+  background-color: transparent;
+  cursor: pointer;
+}
+.menubtn:focus{
+  color: #000000;
+  font-weight: 600;
+}
+
+     /*   input      button */
+/*  3 image container */
+
+ /* 3 images container  ->    imagesbox.css */
+ /* 3 videos container  ->    videosbox.css */
+
+.button2{
+    height: 40px;
+    width: auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    background-color: #8587ff;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    display: none;
+}
+.button2:hover{
+    background-color: #7173fc;
+}
+.button2:active{
+    background-color: #5b5dfc;
+    transform: scale(0.98);
+}
+
+
+
+/*  Version code 0.1 -  Create by sayanthecoder😁😁😁😁   16/05/2024.  21:44  india */
+
+
+
+.linkstor{
+  display: none;
+}
+
+
+
+
+
+
+
+
