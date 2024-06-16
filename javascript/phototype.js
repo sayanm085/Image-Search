@@ -3,10 +3,10 @@ let searchresults= document.querySelector(".imgpara");
 let phototype=(data)=>{
    data.forEach((data)=>{
     
-    console.log(data)
     let imageresult=document.createElement("div")
     imageresult.classList.add("imgp")
     let imagebox=document.createElement("img")
+    imagebox.classList.add("imglink")
     imagebox.src=data.src.original;
     let paradiv1=document.createElement("div")
     paradiv1.classList.add("textboxtop")

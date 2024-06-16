@@ -116,6 +116,7 @@
   
   .svgIcon {
     fill: rgb(70, 70, 70);
+    height:1em;
   }
   
   .icon2 {
@@ -140,6 +141,7 @@
   .Btn:hover .svgIcon {
     fill: rgb(255, 255, 255);
     animation: slide-in-top 1s linear infinite;
+    
   }
   
   @keyframes slide-in-top {

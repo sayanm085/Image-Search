@@ -13,11 +13,18 @@
 nav{
   height: 70px;
   width: 100%;
+  position: fixed;
+  z-index: 1000;
   background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+a{
+  text-decoration: none;
+  color: #000000;
 }
 .logo{
   padding-left:20px ;
@@ -91,6 +98,97 @@ nav{
   100% { transform: rotate(0); }
 }
 
+#checkbox {
+  display: none;
+}
+
+.toggle {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition-duration: .5s;
+  display: none;
+}
+
+.bars {
+  width: 100%;
+  height: 4px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 2px;
+}
+
+#bar2 {
+  transition-duration: .8s;
+}
+
+#bar1,#bar3 {
+  width: 70%;
+}
+
+#checkbox:checked + .toggle .bars {
+  position: absolute;
+  transition-duration: .5s;
+}
+
+#checkbox:checked + .toggle #bar2 {
+  transform: scaleX(0);
+  transition-duration: .5s;
+}
+
+#checkbox:checked + .toggle #bar1 {
+  width: 100%;
+  transform: rotate(45deg);
+  transition-duration: .5s;
+}
+
+#checkbox:checked + .toggle #bar3 {
+  width: 100%;
+  transform: rotate(-45deg);
+  transition-duration: .5s;
+}
+
+#checkbox:checked + .toggle {
+  transition-duration: .5s;
+  transform: rotate(180deg);
+}
+
+
+
+
+
+
+.navber-slider{
+  margin-top: 70px;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 12;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  top: -1000px;
+  transition: top 0.40s ease;
+} 
+.navber-slider-box{
+  height: 300px;
+  width: 95%;
+
+  display: flex;
+  font-size: 1.4rem;
+  flex-direction: column;
+  align-items: center;
+
+ 
+ 
+
+}
 
 
 /*   input      button   end */
@@ -152,7 +250,7 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url('/image/pexels-creative-vix-9754.jpg');
+    background-image: url('https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg');
     background-size: cover;
     background-position: center;
     justify-content: space-between;

@@ -1,3 +1,25 @@
+@media  (max-width: 1200px) {
+  video {
+    width: 73%;
+    
+  }
+
+  .imgplaybox{
+    width: 50%;
+   }
+
+  .icon1 {
+    width: 85%;
+    height: auto;
+    display: flex;
+    margin-top: 5px;
+}
+
+
+}
+
+
+
 @media  (max-width: 1000px) {
     .imgpara {
         columns: 4 340px;
@@ -6,6 +28,13 @@
       .header1 {
         height: auto;
         width: 75%;
+       }
+       video {
+        width: 85%;
+        
+      }
+      .imgplaybox{
+        width: 60%;
        }
 }
 
@@ -30,10 +59,43 @@
     
 }
 @media (max-width:830px){
+  video {
+    width: 95%;
     
-    .navoption{
-    display: none;
+  }
+  .imgplaybox{
+    width: 80%;
    }
+  
+  
+  .navoption1 {
+    display: none;
+  }
+  .navoption2 i{
+    display: none;
+  }
+  .toggle {
+    display: flex;
+    margin-right: 20px;
+  }
+ 
+  .slider-box{
+    margin-bottom: 10px;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0px 1px 1px #d2d2d231;
+  }
+   .btn {
+    height: 40px;
+    width: auto;
+    font-size: 1.4rem;
+   }
+
+
    .header1 {
     height: auto;
     width: 75%;
@@ -101,14 +163,33 @@
         background: linear-gradient(to top, #0000005c,transparent);
       }
       .Btn {
-        width: 39px;
-        height: 39px;
+        width: 27px;
+        height: 27px;
+        border-radius: 5px;
       }
       .title p {
         display: none;
       }
+      .svgIcon {
+        fill: rgb(70, 70, 70);
+        height:0.8em;
+      }
+      .icon2 {
+        width: 14px;
+        height: 2px;
+      }
 
 
+
+      .videobox-down {
+        display: none;
+      }
+      .videobox-top i {
+        font-size: 1.5rem;
+      }
+      .imgplaybox{
+        width: 87%;
+       }
 
  }
 
@@ -124,10 +205,11 @@
     padding-top: 0px;
   }
 
-    .header1 {
-      height: auto;
-      width: 85%;
-    }
+  .header1 {
+    height: auto;
+    width: 85%;
+    margin-top: 50px;
+  }
     .trending-text {
         font-size: 0.8rem;
         font-weight: 400;

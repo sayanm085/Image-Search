@@ -1,5 +1,5 @@
 let inputbuttondiv=document.querySelector(".inputbutton")
-let input=document.querySelector("input")
+let input=document.querySelector(".input")
 let button = document.querySelector(".Searchbutton")
 let showmore=document.querySelector(".button2")
 let imgbox=document.querySelector(".imgpara")
@@ -25,12 +25,12 @@ document.querySelector(".videopbtn").addEventListener("click",()=>{
   imgbox.style.display="none"
 })
 
-
+  inputData=input.value
 
         let link=()=>{
           
             inputData=input.value
-            let url=`https://api.pexels.com/${opsions()}/search?page=${page}&per_page=12&query=${inputData}`
+            let url=`https://api.pexels.com/${opsions()}/search?page=${page}&per_page=12&query=${inputData}&orientation=landscape`
             return url
         }
 
@@ -46,8 +46,6 @@ let info=async()=>{
    let photodata=filter.photos
    let videodata=filter.videos
 
-
-   console.log(filter)
 
    if(page==1){
     searchresults.innerHTML=''
@@ -65,9 +63,10 @@ let info=async()=>{
   if(page=>1){
     showmore.style.display="block"
   }
-
+ 
   playvideolink()
-
+  exitbtnfnc()
+  playimglink()
   document.querySelector(".videopbtn").addEventListener("click",(inputData)=>{
 
     info()
@@ -114,24 +113,57 @@ showmore.addEventListener("click",()=>{
   // video you play box
 
 let playvideolink=()=>{
-  let allvideo=document.querySelectorAll("#videoplaybtn")
+  let allvideo=document.querySelectorAll(".videop")
   let videobox=document.querySelector(".videobox")
   let videomedia= document.querySelector(".videoplaybox");
 
   allvideo.forEach((video)=>{
-    video.addEventListener("click",()=>{
-      let videolink= video.parentElement.querySelector(".videolink")
+     video.addEventListener("click",()=>{
+      let videolink=video.children[1]
       videomedia.src=`${videolink.innerText}`
       videobox.style.display="flex"
+      videomedia.style.display="flex"
+      videodownloadbutton.style.display="block"
+      
     })
   })
 }
 
+let playimglink=()=>{
+  let allimg=document.querySelectorAll(".imgp")
+  let imgbox=document.querySelector(".imgbox")
+  let imgmedia= document.querySelector(".imgplaybox");
 
+  allimg.forEach((img)=>{
+    img.addEventListener("click",()=>{
+      let photolink=img.children[0]
+      imgmedia.src=photolink.src;
+      imgbox.style.display="flex"
+      imgmedia.style.display="flex"
+      photodownloadbutton.style.display="block"
+    })
+  })
+}
+let allvideo=document.querySelectorAll("#videoplaybtn")
+let videobox=document.querySelector(".videobox")
+let videomedia= document.querySelector(".videoplaybox");
+let imgmedia= document.querySelector(".imgplaybox");
+let exitbtn=document.querySelector(".exit-btn")
+let exitbtnfnc=()=>{
+  exitbtn.addEventListener("click",()=>{
+    videomedia.src="";
+    imgmedia.src="";
+    videobox.style.display="none"
+    imgmedia.style.display="none"
+    videomedia.style.display="none"
+    videodownloadbutton.style.display="none"
+    photodownloadbutton.style.display="none"
+  })
+}
 
-
+  exitbtnfnc()
   playvideolink()
-
+  playimglink()
 // video play code
 
 

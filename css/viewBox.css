@@ -1,28 +1,44 @@
 .videobox{
     position: fixed;
-    top: 0;
+    top: 70px;
     left: 0;
     display: none;
     justify-content: center;
     width: 100%;
     height: 100vh;
     background: rgba(109, 109, 109, 0.715);
-    z-index: 9999;
+    z-index: 10;
 }
 .newbox{
     position: absolute;
     height: 100vh;
-    width: 85%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: aliceblue;
 }
+.exit-btn {
+  height: 50px;
+  width: 90%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: 5px;
+  background-color: transparent;
+  border: none;
+}
+.exit-btn i{
+ font-size: 2.4rem;
+ cursor: pointer;
+ height: 100%;
+ width: 40px;
+}
 .icon1{
     width: 85%;
     height: auto;
     display: flex;
-    margin-top: 50px;
+    margin-top: 10px;
     justify-content: space-between;
     
 }
@@ -32,18 +48,37 @@
     align-items: center;
 }
 
-.videomain{
-    margin-top: 50px;
+.videomain {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-video{
-    width: auto;
-    height: 450px;
-    border-radius: 5px;
-    object-fit: cover;
-   
+.videoplaybox{
+  display: none;
+}
+  video {
+  width: 55%;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+  
+}
+
+.imgplaybox{
+ height: auto;
+ width: 41%;
+ display: none;
 }
 
 
+.photo-button-down{
+  display: none;
+}
+.video-button-down{
+  display: none;
+}
 
 
 

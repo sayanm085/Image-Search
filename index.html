@@ -16,36 +16,77 @@
 </head>
 <body>
     <nav>
-        <div class="logo">Pixacon</div>
+        <a href="" class="logolink"><div class="logo">Pixacon</div></a>
         <div class="navoption">
           <div class="navoption1">
             <button class="btn photo" >Home</button>
             <button class="btn video">Creator</button>
           </div>
           <div class="navoption2">
-            <button>submit feedback</button>
+           <a href="./feedback page.html"><button>submit feedback</button></a>
+
+           <input type="checkbox" id="checkbox">
+           <label for="checkbox" class="toggle">
+               <div class="bars" id="bar1"></div>
+               <div class="bars" id="bar2"></div>
+               <div class="bars" id="bar3"></div>
+           </label> 
+
+
             <i class="fa-solid fa-bell "></i>
           </div>
         </div>
     </nav>
-    
+    <div class="navber-slider">
+      <div class="navber-slider-box">
+
+        <div class="slider-box">
+          <button class="btn photo" >Home</button>
+        </div>
+        <div class="slider-box">
+          <button class="btn video">Creator</button>
+        </div>
+        <div class="slider-box">
+          <a href="./feedback page.html">
+            <button class="btn video">submit feedback</button>
+          </a> 
+        </div>
+        
+        
+        
+        <i class="fa-solid fa-bell "></i>
+      </div>
+      
+    </div>
 
 <!-- video and photo viewBox -->
-    <div class="videobox">
+    <div class="videobox imgbox">
         <div class="newbox">
+          <button class="exit-btn"><i class="fa-solid fa-xmark exit-btn" ></i></button>
             <div class="icon1">
               <div class="profile">
                 <img id="profileicon" src="./icon/icons8-male-user-48.png" alt="">
                 <p id="profilename">Sayan Mondal</p>
               </div>
-              <button class="button-down" type="button">
-                <span class="button__text">Download</span>
-                <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
-              </button>
+              <a href="#" class="photo-button-down">
+                <button class="button-down" type="button">
+                  <span class="button__text">Download</span>
+                  <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
+                </button>
+              </a>
+              
+              <a href="#" class="video-button-down">
+                <button class="button-down" type="button">
+                  <span class="button__text">Download</span>
+                  <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
+                </button>
+              </a>
+           
+              
             </div>
             <div class="videomain">
-              
                 <video class="videoplaybox" src="" controls></video>
+                <img class="imgplaybox videoplaybox" src="" alt="">
             </div>
         </div>
     </div>
@@ -81,7 +122,7 @@
         </div>
         <!-- /* Photo or video option End */ -->
          <div class="hr"></div>
-        <input type="text" name="text" class="input" id="input" placeholder="Search for photos and videos">
+        <input type="text" name="text" class="input" id="input" placeholder="Search for photos and videos" value="">
         
         <button  class="Searchbutton ">
       <svg viewBox="0 0 512 512" class="searchIcon"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path></svg>
@@ -91,11 +132,11 @@
 </div>
 <div class="trending">
   <p class="tr-src" style="color: rgba(255, 255, 255, 0.728);">Trending searches:</p>
-  <p class="trending-text">business,</p>
-  <p class="trending-text">computer,</p>
-  <p class="trending-text">nature,</p>
-  <p class="trending-text">Forest,</p>
-  <p class="trending-text">love</p>
+  <p class="trending-text">business </p>
+  <p class="trending-text">computer </p>
+  <p class="trending-text">nature</p>
+  <p class="trending-text">Forest </p>
+  <p class="trending-text">love </p>
 </div>
 </div>
 
@@ -129,7 +170,7 @@
     <div class="imgpara">
         <!-- 1st image -->
         <div class="imgp">
-          <img src="https://images.pexels.com/photos/707046/pexels-photo-707046.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350"><div class="textboxtop">
+          <img class="imglink" src="https://images.pexels.com/photos/707046/pexels-photo-707046.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350"><div class="textboxtop">
             <div class="Photographername">
             <img id="profileicon" src="./icon/icons8-male-user-48.png" alt="">
             <p>Trace Constant</p>
@@ -140,7 +181,7 @@
             <p>Photo of White Bmw E46 </p>
            </div>
             <button class="Btn">
-                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" class="svgIcon">
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 384 512" class="svgIcon">
                   <path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
                 </svg>
                 <span class="icon2"></span>
@@ -149,7 +190,7 @@
             </div>
        <!-- 2nd image -->
               <div class="imgp">
-                <img src="https://images.pexels.com/photos/592677/pexels-photo-592677.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350">
+                <img class="imglink" src="https://images.pexels.com/photos/592677/pexels-photo-592677.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350">
                 <div class="textboxtop">
                   <div class="Photographername">
                 <img id="profileicon" src="./icon/icons8-male-user-48.png" alt="">
@@ -169,7 +210,8 @@
                 </div>
                 </div>
        <!-- 3rd image -->
-       <div class="imgp"><img src="https://images.pexels.com/photos/1761279/pexels-photo-1761279.jpeg"><div class="textboxtop"><div class="Photographername">
+       <div class="imgp">
+        <img class="imglink" src="https://images.pexels.com/photos/1761279/pexels-photo-1761279.jpeg"><div class="textboxtop"><div class="Photographername">
         <img id="profileicon" src="./icon/icons8-male-user-48.png" alt="">
         <p>Jacob Colvin</p>
        </div></div><div class="textbox"><div class="title">
@@ -183,7 +225,7 @@
           </button></div></div>
 
            <!-- 4th image -->
-           <div class="imgp"><img src="https://images.pexels.com/photos/1535775/pexels-photo-1535775.jpeg"><div class="textboxtop"><div class="Photographername">
+           <div class="imgp"><img class="imglink" src="https://images.pexels.com/photos/1535775/pexels-photo-1535775.jpeg"><div class="textboxtop"><div class="Photographername">
             <img id="profileicon" src="./icon/icons8-male-user-48.png" alt="">
             <p>Jadson Thomas</p>
            </div></div><div class="textbox"><div class="title">
@@ -197,7 +239,7 @@
               </button></div></div>
 
             <!-- 5th image -->
-              <div class="imgp"><img src="https://images.pexels.com/photos/592284/pexels-photo-592284.jpeg">
+              <div class="imgp"><img class="imglink" src="https://images.pexels.com/photos/592284/pexels-photo-592284.jpeg">
                 <div class="textboxtop"><div class="Photographername">
                 <img id="profileicon" src="./icon/icons8-male-user-48.png" alt="">
                 <p>eberhard grossgasteiger</p>
@@ -216,7 +258,7 @@
             </div>
 
           <!-- 6th image -->
-        <div class="imgp"><img src="https://images.pexels.com/photos/2264036/pexels-photo-2264036.jpeg">
+        <div class="imgp"><img class="imglink" src="https://images.pexels.com/photos/2264036/pexels-photo-2264036.jpeg">
             <div class="textboxtop"><div class="Photographername">
                <img id="profileicon" src="./icon/icons8-male-user-48.png" alt="">
              <p>Israel França</p>
@@ -236,7 +278,7 @@
 </div>
 
      <!-- 7en image -->
-        <div class="imgp"><img src="https://images.pexels.com/photos/1235706/pexels-photo-1235706.jpeg"><div class="textboxtop"><div class="Photographername">
+        <div class="imgp"><img class="imglink" src="https://images.pexels.com/photos/1235706/pexels-photo-1235706.jpeg"><div class="textboxtop"><div class="Photographername">
             <img id="profileicon" src="./icon/icons8-male-user-48.png" alt="">
             <p>Lood Goosen</p>
            </div></div><div class="textbox"><div class="title">
@@ -252,7 +294,7 @@
 
 <!-- 8th image -->
             <div class="imgp">
-              <img src="https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg">
+              <img class="imglink" src="https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg">
               <div class="textboxtop">
                 <div class="Photographername">
                 <img id="profileicon" src="./icon/icons8-male-user-48.png" alt="">
@@ -604,6 +646,9 @@
     <script src="./javascript/op.js"></script>
     <script src="./javascript/phototype.js"></script>
     <script src="./javascript/videotype.js"></script>
+    <script src="./javascript/slider.js"></script>
+    <script src="./javascript/Download Button.js"></script>
+    <script src="./javascript/trending-text.js"></script>
     <script src="https://kit.fontawesome.com/f74ecaf58e.js" crossorigin="anonymous"></script>
 </body>
 </html>
