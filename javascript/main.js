@@ -7,7 +7,7 @@ let videodiv=document.querySelector(".videopara")
 
 
 
-let keys="avNbGKi5tga4YDX23RdPI1V6XWq5jQ11Qo3DF23BsRVFoVWC5FvffG9A" //pexels
+let keys="***************************************" //pexels
 let page=1;
 
 
