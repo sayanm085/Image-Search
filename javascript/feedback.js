@@ -1,5 +1,5 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyCK4OktQ5JQRFom1adY6AqFNZd9gBfmiH8",
+    apiKey: "********************************",
     authDomain: "pixacon-f42a8.firebaseapp.com",
     databaseURL: "https://pixacon-f42a8-default-rtdb.firebaseio.com",
     projectId: "pixacon-f42a8",
